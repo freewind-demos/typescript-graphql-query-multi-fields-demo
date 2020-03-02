@@ -1,9 +1,7 @@
-TypeScript GraphQL Query Demo
+TypeScript GraphQL Query Multi Fields Demo
 ===========================
 
-使用GraphQL，需要先定义type，同时在每个field处定义`resolve`返回数据。
-
-客户端将发送一个query string得到相应的数据。该query string会自动被解析、验证。
+需要查询多个字段的，在schema定义处的resolve那里，可以通过参数拿到整个对象，然后再返回相应的字段。
 
 ```
 npm install
